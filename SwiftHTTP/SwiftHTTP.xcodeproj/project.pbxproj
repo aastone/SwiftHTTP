@@ -11,6 +11,9 @@
 		CD1493E529A613F200A9E481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493E429A613F200A9E481 /* ContentView.swift */; };
 		CD1493E729A613F500A9E481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1493E629A613F500A9E481 /* Assets.xcassets */; };
 		CD1493EA29A613F500A9E481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1493E929A613F500A9E481 /* Preview Assets.xcassets */; };
+		CD1493F229A6216400A9E481 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493F129A6216400A9E481 /* HTTPRequest.swift */; };
+		CD1493F429A621B000A9E481 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493F329A621B000A9E481 /* HTTPMethod.swift */; };
+		CD1493F629A659B400A9E481 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493F529A659B400A9E481 /* HTTPBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		CD1493E429A613F200A9E481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD1493E629A613F500A9E481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1493E929A613F500A9E481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD1493F129A6216400A9E481 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		CD1493F329A621B000A9E481 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CD1493F529A659B400A9E481 /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		CD1493E129A613F200A9E481 /* SwiftHTTP */ = {
 			isa = PBXGroup;
 			children = (
+				CD1493F029A6213B00A9E481 /* NetworkCapability */,
 				CD1493E229A613F200A9E481 /* SwiftHTTPApp.swift */,
 				CD1493E429A613F200A9E481 /* ContentView.swift */,
 				CD1493E629A613F500A9E481 /* Assets.xcassets */,
@@ -65,6 +72,16 @@
 				CD1493E929A613F500A9E481 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD1493F029A6213B00A9E481 /* NetworkCapability */ = {
+			isa = PBXGroup;
+			children = (
+				CD1493F129A6216400A9E481 /* HTTPRequest.swift */,
+				CD1493F329A621B000A9E481 /* HTTPMethod.swift */,
+				CD1493F529A659B400A9E481 /* HTTPBody.swift */,
+			);
+			path = NetworkCapability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1493F429A621B000A9E481 /* HTTPMethod.swift in Sources */,
+				CD1493F229A6216400A9E481 /* HTTPRequest.swift in Sources */,
 				CD1493E529A613F200A9E481 /* ContentView.swift in Sources */,
 				CD1493E329A613F200A9E481 /* SwiftHTTPApp.swift in Sources */,
+				CD1493F629A659B400A9E481 /* HTTPBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
