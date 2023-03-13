@@ -15,6 +15,8 @@
 		CD1493F429A621B000A9E481 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493F329A621B000A9E481 /* HTTPMethod.swift */; };
 		CD1493F629A659B400A9E481 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1493F529A659B400A9E481 /* HTTPBody.swift */; };
 		CDE5A7FD29BA0D7B00D74EE0 /* HTTPLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */; };
+		CDE5A7FF29BF043A00D74EE0 /* ExampleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */; };
+		CDE5A80229BF1A7C00D74EE0 /* MockHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		CD1493F329A621B000A9E481 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		CD1493F529A659B400A9E481 /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
 		CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPLoading.swift; sourceTree = "<group>"; };
+		CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequest.swift; sourceTree = "<group>"; };
+		CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 		CD1493E129A613F200A9E481 /* SwiftHTTP */ = {
 			isa = PBXGroup;
 			children = (
+				CDE5A80029BF1A5000D74EE0 /* UnitTests */,
 				CD1493F029A6213B00A9E481 /* NetworkCapability */,
 				CD1493E229A613F200A9E481 /* SwiftHTTPApp.swift */,
+				CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */,
 				CD1493E429A613F200A9E481 /* ContentView.swift */,
 				CD1493E629A613F500A9E481 /* Assets.xcassets */,
 				CD1493E829A613F500A9E481 /* Preview Content */,
@@ -85,6 +91,14 @@
 				CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */,
 			);
 			path = NetworkCapability;
+			sourceTree = "<group>";
+		};
+		CDE5A80029BF1A5000D74EE0 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +174,11 @@
 				CDE5A7FD29BA0D7B00D74EE0 /* HTTPLoading.swift in Sources */,
 				CD1493F429A621B000A9E481 /* HTTPMethod.swift in Sources */,
 				CD1493F229A6216400A9E481 /* HTTPRequest.swift in Sources */,
+				CDE5A80229BF1A7C00D74EE0 /* MockHTTPRequest.swift in Sources */,
 				CD1493E529A613F200A9E481 /* ContentView.swift in Sources */,
 				CD1493E329A613F200A9E481 /* SwiftHTTPApp.swift in Sources */,
 				CD1493F629A659B400A9E481 /* HTTPBody.swift in Sources */,
+				CDE5A7FF29BF043A00D74EE0 /* ExampleRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

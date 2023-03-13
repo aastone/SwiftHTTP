@@ -32,11 +32,15 @@ public extension HTTPRequest {
         get { urlComponents.path }
         set { urlComponents.path = newValue }
     }
+
+    var url: URL? {
+        urlComponents.url
+    }
 }
 
 public struct HTTPResponse {
     public let request: HTTPRequest
-    private let response: HTTPURLResponse
+    public let response: HTTPURLResponse
     public let body: Data?
 
     public var status: HTTPStatus {
