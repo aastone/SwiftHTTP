@@ -17,7 +17,20 @@
 		CDE5A7FD29BA0D7B00D74EE0 /* HTTPLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */; };
 		CDE5A7FF29BF043A00D74EE0 /* ExampleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */; };
 		CDE5A80229BF1A7C00D74EE0 /* MockHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */; };
+		CDE5A80429CAEA7100D74EE0 /* StarWarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A80329CAEA7000D74EE0 /* StarWarsAPI.swift */; };
+		CDE5A80E29CAEE3B00D74EE0 /* SwiftHTTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A80D29CAEE3B00D74EE0 /* SwiftHTTPTests.swift */; };
+		CDE5A81529CAFE8400D74EE0 /* AnyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A81429CAFE8400D74EE0 /* AnyLoader.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE5A80F29CAEE3B00D74EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1493D729A613F200A9E481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1493DE29A613F200A9E481;
+			remoteInfo = SwiftHTTP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CD1493DF29A613F200A9E481 /* SwiftHTTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHTTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +44,21 @@
 		CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPLoading.swift; sourceTree = "<group>"; };
 		CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequest.swift; sourceTree = "<group>"; };
 		CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPRequest.swift; sourceTree = "<group>"; };
+		CDE5A80329CAEA7000D74EE0 /* StarWarsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPI.swift; sourceTree = "<group>"; };
+		CDE5A80B29CAEE3B00D74EE0 /* SwiftHTTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHTTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE5A80D29CAEE3B00D74EE0 /* SwiftHTTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHTTPTests.swift; sourceTree = "<group>"; };
+		CDE5A81429CAFE8400D74EE0 /* AnyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD1493DC29A613F200A9E481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE5A80829CAEE3B00D74EE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				CD1493E129A613F200A9E481 /* SwiftHTTP */,
+				CDE5A80C29CAEE3B00D74EE0 /* SwiftHTTPTests */,
 				CD1493E029A613F200A9E481 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CD1493DF29A613F200A9E481 /* SwiftHTTP.app */,
+				CDE5A80B29CAEE3B00D74EE0 /* SwiftHTTPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +93,7 @@
 				CD1493F029A6213B00A9E481 /* NetworkCapability */,
 				CD1493E229A613F200A9E481 /* SwiftHTTPApp.swift */,
 				CDE5A7FE29BF043A00D74EE0 /* ExampleRequest.swift */,
+				CDE5A80329CAEA7000D74EE0 /* StarWarsAPI.swift */,
 				CD1493E429A613F200A9E481 /* ContentView.swift */,
 				CD1493E629A613F500A9E481 /* Assets.xcassets */,
 				CD1493E829A613F500A9E481 /* Preview Content */,
@@ -89,6 +116,7 @@
 				CD1493F329A621B000A9E481 /* HTTPMethod.swift */,
 				CD1493F529A659B400A9E481 /* HTTPBody.swift */,
 				CDE5A7FC29BA0D7B00D74EE0 /* HTTPLoading.swift */,
+				CDE5A81429CAFE8400D74EE0 /* AnyLoader.swift */,
 			);
 			path = NetworkCapability;
 			sourceTree = "<group>";
@@ -99,6 +127,14 @@
 				CDE5A80129BF1A7C00D74EE0 /* MockHTTPRequest.swift */,
 			);
 			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		CDE5A80C29CAEE3B00D74EE0 /* SwiftHTTPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5A80D29CAEE3B00D74EE0 /* SwiftHTTPTests.swift */,
+			);
+			path = SwiftHTTPTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +157,24 @@
 			productReference = CD1493DF29A613F200A9E481 /* SwiftHTTP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CDE5A80A29CAEE3B00D74EE0 /* SwiftHTTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE5A81129CAEE3B00D74EE0 /* Build configuration list for PBXNativeTarget "SwiftHTTPTests" */;
+			buildPhases = (
+				CDE5A80729CAEE3B00D74EE0 /* Sources */,
+				CDE5A80829CAEE3B00D74EE0 /* Frameworks */,
+				CDE5A80929CAEE3B00D74EE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE5A81029CAEE3B00D74EE0 /* PBXTargetDependency */,
+			);
+			name = SwiftHTTPTests;
+			productName = SwiftHTTPTests;
+			productReference = CDE5A80B29CAEE3B00D74EE0 /* SwiftHTTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +187,10 @@
 				TargetAttributes = {
 					CD1493DE29A613F200A9E481 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					CDE5A80A29CAEE3B00D74EE0 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = CD1493DE29A613F200A9E481;
 					};
 				};
 			};
@@ -150,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				CD1493DE29A613F200A9E481 /* SwiftHTTP */,
+				CDE5A80A29CAEE3B00D74EE0 /* SwiftHTTPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +220,13 @@
 			files = (
 				CD1493EA29A613F500A9E481 /* Preview Assets.xcassets in Resources */,
 				CD1493E729A613F500A9E481 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE5A80929CAEE3B00D74EE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +243,30 @@
 				CDE5A80229BF1A7C00D74EE0 /* MockHTTPRequest.swift in Sources */,
 				CD1493E529A613F200A9E481 /* ContentView.swift in Sources */,
 				CD1493E329A613F200A9E481 /* SwiftHTTPApp.swift in Sources */,
+				CDE5A80429CAEA7100D74EE0 /* StarWarsAPI.swift in Sources */,
 				CD1493F629A659B400A9E481 /* HTTPBody.swift in Sources */,
 				CDE5A7FF29BF043A00D74EE0 /* ExampleRequest.swift in Sources */,
+				CDE5A81529CAFE8400D74EE0 /* AnyLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE5A80729CAEE3B00D74EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE5A80E29CAEE3B00D74EE0 /* SwiftHTTPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE5A81029CAEE3B00D74EE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1493DE29A613F200A9E481 /* SwiftHTTP */;
+			targetProxy = CDE5A80F29CAEE3B00D74EE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CD1493EB29A613F500A9E481 /* Debug */ = {
@@ -357,6 +441,50 @@
 			};
 			name = Release;
 		};
+		CDE5A81229CAEE3B00D74EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MP9BQRAVS6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftHTTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftHTTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftHTTP";
+			};
+			name = Debug;
+		};
+		CDE5A81329CAEE3B00D74EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MP9BQRAVS6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftHTTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftHTTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftHTTP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,6 +502,15 @@
 			buildConfigurations = (
 				CD1493EE29A613F500A9E481 /* Debug */,
 				CD1493EF29A613F500A9E481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE5A81129CAEE3B00D74EE0 /* Build configuration list for PBXNativeTarget "SwiftHTTPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE5A81229CAEE3B00D74EE0 /* Debug */,
+				CDE5A81329CAEE3B00D74EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

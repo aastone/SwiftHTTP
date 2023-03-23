@@ -8,9 +8,28 @@
 import Foundation
 
 public protocol HTTPLoading {
+    func load(request: HTTPRequest) async -> HTTPResult?
+}
+
+open class HTTPLoader {
+    public var nextLoader: HTTPLoader? {
+        willSet {
+            guard nextLoader == nil else { fatalError("The nextLoader may only be set once") }
+        }
+    }
+
+    public init() { }
+
     ///   func load(request: HTTPRequest, completion: @escaping (HTTPResult) -> Void)
     //TODO: - Remove optional return value
-    func load(request: HTTPRequest) async -> HTTPResult?
+    open func load(request: HTTPRequest) async -> HTTPResult? {
+        if let next = nextLoader {
+            return await next.load(request: request)
+        } else {
+            let error = HTTPError(code: .cannotConnect, request: request, response: nil, underlyingError: nil)
+            return .failure(error)
+        }
+    }
 }
 
 extension URLSession: HTTPLoading {
