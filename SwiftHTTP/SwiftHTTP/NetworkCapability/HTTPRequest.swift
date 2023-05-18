@@ -7,6 +7,12 @@
 
 import Foundation
 
+public protocol HTTPRequestOption {
+    associatedtype Value
+
+    static var defaultOptionValue: Value { get }
+}
+
 public struct HTTPRequest {
     let defaultScheme = "https"
 
@@ -14,6 +20,28 @@ public struct HTTPRequest {
     public var method: HTTPMethod = .get
     public var headers: [String: String] = [:]
     public var body: HTTPBody = EmptyBody()
+
+    private var options = [ObjectIdentifier: Any]()
+
+    public subscript<x: HTTPRequestOption>(option type: x.Type) -> x.Value {
+        get {
+            let id = ObjectIdentifier(type)
+
+            // pull out any specified value from the options dictionary, if it's the right type
+            // if it's missing or the wrong type, return the defaultOptionValue
+            guard let value = options[id] as? x.Value else {
+                return type.defaultOptionValue
+            }
+
+            return value
+        }
+
+        set {
+            let id = ObjectIdentifier(type)
+            // save the specified value into the options dictionary
+            options[id] = newValue
+        }
+    }
 
     public init() {
         urlComponents.scheme = defaultScheme

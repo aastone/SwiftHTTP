@@ -32,3 +32,19 @@ public func --> (lhs: HTTPLoader?, rhs: HTTPLoader?) -> HTTPLoader? {
     lhs?.nextLoader = rhs
     return lhs ?? rhs
 }
+
+
+public class ModifyRequest: HTTPLoader {
+    private let modifier: (HTTPRequest) -> HTTPRequest
+
+    public init(modifier: @escaping (HTTPRequest) -> HTTPRequest) {
+        self.modifier = modifier
+        super.init()
+    }
+
+    public override func load(request: HTTPRequest) async -> HTTPResult? {
+        let modifiedRequest = modifier(request)
+
+        return await super.load(request: modifiedRequest)
+    }
+}

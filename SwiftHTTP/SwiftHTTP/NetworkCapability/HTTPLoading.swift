@@ -32,6 +32,14 @@ open class HTTPLoader {
     }
 }
 
+public class PrintLoader: HTTPLoader {
+    public override func load(request: HTTPRequest) async -> HTTPResult? {
+        print("Loading \(request)")
+
+        return await super.load(request: request)
+    }
+}
+
 extension URLSession: HTTPLoading {
     public func load(request: HTTPRequest) async -> HTTPResult? {
         guard let url = request.url else { return nil }
